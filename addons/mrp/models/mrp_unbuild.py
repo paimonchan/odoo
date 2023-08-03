@@ -2,7 +2,7 @@
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 
 from odoo import api, fields, models, _
-from odoo.exceptions import AccessError, UserError
+from odoo.exceptions import UserError, ValidationError
 from odoo.tools import float_compare, float_round
 from odoo.osv import expression
 
@@ -78,7 +78,7 @@ class MrpUnbuild(models.Model):
 
     def _compute_allowed_mo_ids(self):
         # the function remains as a stable fix patch that was removed in master
-        pass
+        self.allowed_mo_ids = False
 
     @api.onchange('company_id')
     def _onchange_company_id(self):
@@ -125,7 +125,7 @@ class MrpUnbuild(models.Model):
     @api.constrains('product_qty')
     def _check_qty(self):
         if self.product_qty <= 0:
-            raise ValueError(_('Unbuild Order product quantity has to be strictly positive.'))
+            raise ValidationError(_('Unbuild Order product quantity has to be strictly positive.'))
 
     @api.model
     def create(self, vals):

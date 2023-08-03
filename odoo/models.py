@@ -2650,6 +2650,9 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
 
         for (key, definition, message) in self._sql_constraints:
             conname = '%s_%s' % (self._table, key)
+            if len(conname) > 63:
+                _logger.info("Constraint name %r has more than 63 characters", conname)
+
             current_definition = tools.constraint_definition(cr, self._table, conname)
             if current_definition == definition:
                 continue
@@ -2692,7 +2695,8 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                 # following specific properties:
                 #  - reading inherited fields should not bypass access rights
                 #  - copy inherited fields iff their original field is copied
-                self._add_field(name, field.new(
+                Field = type(field)
+                self._add_field(name, Field(
                     inherited=True,
                     inherited_field=field,
                     related=(parent_fname, name),
@@ -2778,7 +2782,7 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
                     if not field.related:
                         self._add_field(name, field)
                     else:
-                        self._add_field(name, field.new(**field.args))
+                        self._add_field(name, type(field)(**field.args))
                 cls._model_fields = list(cls._fields)
 
         else:
@@ -2790,7 +2794,7 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
             for name, field in sorted(getmembers(cls, Field.__instancecheck__), key=lambda f: f[1]._sequence):
                 # do not retrieve magic, custom and inherited fields
                 if not any(field.args.get(k) for k in ('automatic', 'manual', 'inherited')):
-                    self._add_field(name, field.new())
+                    self._add_field(name, type(field)())
             self._add_magic_fields()
             cls._model_fields = list(cls._fields)
 
@@ -4072,12 +4076,7 @@ Fields:
         return records
 
     def _compute_field_value(self, field):
-        # This is for base automation, to have something to override to catch
-        # the changes of values for stored compute fields.
-        if isinstance(field.compute, str):
-            getattr(self, field.compute)()
-        else:
-            field.compute(self)
+        odoo.fields.determine(field.compute, self)
 
         if field.store and any(self._ids):
             # check constraints of the fields that have been computed
@@ -5678,7 +5677,7 @@ Fields:
         return self.id or 0
 
     def __repr__(self):
-        return "%s%s" % (self._name, getattr(self, '_ids', ""))
+        return "%s%r" % (self._name, getattr(self, '_ids', ""))
 
     def __hash__(self):
         if hasattr(self, '_ids'):

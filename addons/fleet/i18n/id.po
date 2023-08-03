@@ -7,7 +7,7 @@
 # firman firman <firman.olxbpn@gmail.com>, 2020
 # Martin Trigaux, 2020
 # Wahyu Setiawan <wahyusetiaaa@gmail.com>, 2020
-# oon arfiandwi <oon.arfiandwi@gmail.com>, 2020
+# oon arfiandwi (OonID) <oon.arfiandwi@gmail.com>, 2020
 # pnyet <david@zeromail.us>, 2020
 # Bonny Useful <bonny.useful@gmail.com>, 2020
 # Febrasari Almania <febrasari.almania@gmail.com>, 2020
@@ -25,7 +25,7 @@ msgstr ""
 "POT-Creation-Date: 2020-09-29 13:45+0000\n"
 "PO-Revision-Date: 2020-09-07 08:12+0000\n"
 "Last-Translator: Abe Manyo, 2023\n"
-"Language-Team: Indonesian (https://www.transifex.com/odoo/teams/41243/id/)\n"
+"Language-Team: Indonesian (https://app.transifex.com/odoo/teams/41243/id/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
@@ -144,7 +144,7 @@ msgstr "Add a new tag"
 #. module: fleet
 #: model:res.groups,name:fleet.fleet_group_manager
 msgid "Administrator"
-msgstr ""
+msgstr "Administrator"
 
 #. module: fleet
 #: model:fleet.service.type,name:fleet.type_service_6
@@ -194,7 +194,7 @@ msgstr "Diarsipkan"
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle__next_assignation_date
 msgid "Assignment Date"
-msgstr ""
+msgstr "Tanggal Tugas"
 
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle__log_drivers
@@ -804,7 +804,7 @@ msgstr "Berakhir"
 #. module: fleet
 #: model:ir.model.fields,field_description:fleet.field_fleet_vehicle__first_contract_date
 msgid "First Contract Date"
-msgstr ""
+msgstr "Tanggal Kontrak Pertama"
 
 #. module: fleet
 #: model:ir.module.category,name:fleet.module_fleet_category
@@ -1905,7 +1905,7 @@ msgstr "Todo"
 #. module: fleet
 #: model:fleet.vehicle.state,name:fleet.fleet_vehicle_state_to_order
 msgid "To Order"
-msgstr ""
+msgstr "Untuk Dipesan"
 
 #. module: fleet
 #: model_terms:ir.ui.view,arch_db:fleet.fleet_vehicle_log_contract_view_search
