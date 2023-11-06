@@ -2654,10 +2654,9 @@ class BaseModel(MetaModel('DummyModel', (object,), {'_register': False})):
 
         for (key, definition, message) in self._sql_constraints:
             conname = '%s_%s' % (self._table, key)
-            if len(conname) > 63:
-                _logger.info("Constraint name %r has more than 63 characters", conname)
-
             current_definition = tools.constraint_definition(cr, self._table, conname)
+            if len(conname) > 63 and not current_definition:
+                _logger.info("Constraint name %r has more than 63 characters", conname)
             if current_definition == definition:
                 continue
 
@@ -4245,7 +4244,7 @@ Fields:
                     _logger.warning("Creating record %s in module %s.", data['xml_id'], module)
 
         if self.env.context.get('import_file'):
-            existing_modules = self.env['ir.module.module'].search([]).mapped('name')
+            existing_modules = self.env['ir.module.module'].sudo().search([]).mapped('name')
             for data in to_create:
                 xml_id = data.get('xml_id')
                 if xml_id:

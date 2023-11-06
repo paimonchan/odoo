@@ -12833,6 +12833,8 @@ msgstr ""
 msgid ""
 "The move could not be posted for the following reason: %(error_message)s"
 msgstr ""
+"El asiento no se puede publicar debido al siguiente motivo: "
+"%(error_message)s"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_move_line__move_id
@@ -14996,7 +14998,7 @@ msgid ""
 "You cannot switch an account to prevent the reconciliation if some partial "
 "reconciliations are still pending."
 msgstr ""
-"No puedes cambiar una cuenta para evitar la conciliación si todavía hay "
+"No puede cambiar una cuenta para evitar la conciliación si todavía hay "
 "pendientes algunas conciliaciones parciales."
 
 #. module: account

@@ -9,9 +9,10 @@
 # Mandy Choy <mnc@odoo.com>, 2021
 # dott.dev <dottdot.dev@gmail.com>, 2021
 # Shigurefox <tom.liang@omniwaresoft.com.tw>, 2021
-# 敬雲 林 <chingyun@yuanchih-consult.com>, 2022
-# Benson <Benson.Dr@Gmail.com>, 2022
 # Martin Trigaux, 2023
+# 敬雲 林 <chingyun@yuanchih-consult.com>, 2023
+# Benson <Benson.Dr@Gmail.com>, 2023
+# Wil Odoo, 2023
 # Tony Ng, 2023
 # 
 msgid ""
@@ -2273,7 +2274,7 @@ msgid ""
 "Add relation information between Sale Orders and Purchase Orders if Make to Order (MTO) is activated on one sold product.\n"
 msgstr ""
 "\n"
-"如果在一個已售產品上啟用按訂單生產 (MTO)，則增加銷售訂單和採購訂單之間的關係訊息. \n"
+"若出售產品已啟用特別訂製（MTO），會加入銷售訂單與採購訂單之間的關係資訊。\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_documents_project
@@ -2777,6 +2778,30 @@ msgid ""
 "The report uses tax tags ``Service`` and ``Tax Withheld`` in order to find adequate journal items. These are set using the fiscal positions, and the right type of product (Services).\n"
 "    "
 msgstr ""
+"\n"
+"Australian Accounting Module\n"
+"============================\n"
+"\n"
+"Taxable Payments Annual Reports (TPAR) for Australia\n"
+"\n"
+"The Taxable payments annual report (TPAR) allows:\n"
+"\n"
+"    • Payments made to contractors (or subcontractors) for services, or\n"
+"    • Grants paid by government entities to ABN holders\n"
+"\n"
+"to be reported where required under the Taxable Payments Reporting System (TPRS) and the Taxable Government Grants and Payments reporting measure.\n"
+"\n"
+"The TPAR is due by 28th August each year.\n"
+"\n"
+"Penalties may apply if you don’t lodge your TPAR on time.\n"
+"\n"
+"For further information on who is required to lodge a Taxable payments annual report refer to\n"
+"https://softwaredevelopers.ato.gov.au/tprs\n"
+"\n"
+"The annual report must be provided to the Commissioner no later than 28 August after the end of the financial year. Reports can be sent more frequently for those that wish to do so.\n"
+"\n"
+"The report uses tax tags ``Service`` and ``Tax Withheld`` in order to find adequate journal items. These are set using the fiscal positions, and the right type of product (Services).\n"
+"    "
 
 #. module: base
 #: model:ir.module.module,description:base.module_l10n_et
@@ -4814,10 +4839,11 @@ msgid ""
 "        "
 msgstr ""
 "\n"
-"導致門票\n"
+"潛在客戶至支援請求\n"
 "===============\n"
 "\n"
-"連結模組以對應指向票證的導線 "
+"連結模組，以將潛在客戶對應至支援請求\n"
+"        "
 
 #. module: base
 #: model:ir.module.module,description:base.module_board
@@ -5203,24 +5229,19 @@ msgid ""
 msgstr ""
 "\n"
 "管理休假請求和分配\n"
+"=====================================\n"
 "\n"
-"Lead to Tickets\n"
-"===============\n"
+"此應用程式控制公司的休假計畫. 它允許員工請求休假. 然後，經理可以審核休假請求，並批准或拒絕這些請求. 這樣，您可以控制公司或部門的整體休假計畫.\n"
 "\n"
-"Link module to map leads to tickets\n"
-"        =====================================\n"
+"您可以設定多種休假(疾病、帶薪天數等)，並使用休假分配快速將休假分配給員工或部門. 員工還可以通過進行新的休假分配來請求更多休息日. 它將增加該休假類型的可用天數總數(如果請求被接受).\n"
 "\n"
-"此應用程式控制公司的休假計畫。它允許員工請求休假。然後，經理可以審核休假請求，並批准或拒絕這些請求。這樣，您可以控制公司或部門的整體休假計畫。\n"
-"\n"
-"您可以設定多種休假(疾病、帶薪天數等)，並使用休假分配快速將休假分配給員工或部門。員工還可以通過進行新的休假分配來請求更多休息日。它將增加該休假類型的可用天數總數(如果請求被接受)。\n"
-"\n"
-"您可以通過以下報告以不同的方式追蹤休假時間:\n"
+"您可以通過以下報表以不同的方式追蹤休假時間:\n"
 "\n"
 "• 休假摘要\n"
 "• 按部門休假\n"
 "• 休假分析\n"
 "\n"
-"還可以與內部議程(CRM 模組的會議)同步，以便在通過設定\"關閉類型\"的休假請求時自動建立會議。\n"
+"還可以與內部議程(CRM 模組的會議)同步，以便在通過設定\"關閉類型\"的休假請求時自動建立會議.\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_mass_mailing_slides
@@ -10496,6 +10517,9 @@ msgid ""
 "    notably for selling mouse traps. With that trick he cut\n"
 "    IT budget by almost half within the last 2 years."
 msgstr ""
+"Addison Olson works in IT sector <b>since 10 years</b>. He is known\n"
+"    notably for selling mouse traps. With that trick he cut\n"
+"    IT budget by almost half within the last 2 years."
 
 #. module: base
 #: code:addons/base/models/ir_qweb_fields.py:0
@@ -11533,7 +11557,7 @@ msgstr "阿塞拜疆"
 msgid ""
 "Azure Interior brings honesty and seriousness to wood industry while helping"
 " customers deal with trees, flowers and fungi."
-msgstr ""
+msgstr "Azure Interior 在幫助客戶處理樹木、花卉和真菌的同時，為木材行業帶來誠實和認真."
 
 #. module: base
 #: model:res.partner.industry,full_name:base.res_partner_industry_B
@@ -12064,6 +12088,9 @@ msgid ""
 "                notably for selling mouse traps. With that trick he cut\n"
 "                IT budget by almost half within the last 2 years."
 msgstr ""
+"Brandon <b>在 IT 行業工作了 10 年</b>。 他是眾所周知的\n"
+"                 尤其是出售捕鼠器。 用那個把戲他砍了\n"
+"                 IT 預算在過去 2 年內減少了近一半."
 
 #. module: base
 #: model:res.country,name:base.br
@@ -12571,7 +12598,7 @@ msgstr "勾選此項 如果 這個 聯繫人 是 一個 員工."
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_attachment__checksum
 msgid "Checksum/SHA1"
-msgstr "Checksum/SHA1"
+msgstr "校驗碼/SHA1"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_server__child_ids
@@ -12766,6 +12793,9 @@ msgid ""
 "                notably for selling mouse traps. With that trick he cut\n"
 "                IT budget by almost half within the last 2 years."
 msgstr ""
+"Colleen Diaz <b>在 IT 領域工作了 10 年</b>。 他是眾所周知的\n"
+"                 尤其是出售捕鼠器。 用那個把戲他砍了\n"
+"                 IT 預算在過去 2 年內減少了近一半."
 
 #. module: base
 #: model:res.country,name:base.co
@@ -12965,7 +12995,7 @@ msgstr "公司標語"
 #: model:ir.model.fields,field_description:base.field_res_partner__company_type
 #: model:ir.model.fields,field_description:base.field_res_users__company_type
 msgid "Company Type"
-msgstr "公司類別"
+msgstr "公司類型"
 
 #. module: base
 #: code:addons/base/models/ir_qweb_fields.py:0
@@ -13500,7 +13530,7 @@ msgstr "為現場服務工作人員創建報告"
 #. module: base
 #: model:ir.module.module,summary:base.module_crm_helpdesk
 msgid "Create Tickets from Leads"
-msgstr ""
+msgstr "從潛在客戶建立支援請求"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_model_menu_create
@@ -14208,7 +14238,7 @@ msgstr "小數分割符"
 msgid ""
 "Deco Addict brings honesty and seriousness to wood industry while helping "
 "customers deal with trees, flowers and fungi."
-msgstr ""
+msgstr "Deco Addict 為木材行業帶來誠實和認真，同時幫助客戶處理樹木、花卉和真菌."
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_partner_deduplicate
@@ -14927,6 +14957,9 @@ msgid ""
 "    notably for selling mouse traps. With that trick he cut\n"
 "    IT budget by almost half within the last 2 years."
 msgstr ""
+"Douglas Fletcher <b>在 IT 領域工作了 10 年</b>。 他是眾所周知的\n"
+"     尤其是出售捕鼠器。 用那個把戲他砍了\n"
+"     IT 預算在過去 2 年內減少了近一半."
 
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_doctor
@@ -16363,6 +16396,9 @@ msgid ""
 "    notably for selling mouse traps. With that trick he cut\n"
 "    IT budget by almost half within the last 2 years."
 msgstr ""
+"Floyd Steward <b>在 IT 領域工作了 10 年</b>。 他是眾所周知的\n"
+"     尤其是出售捕鼠器。 用那個把戲他砍了\n"
+"     IT 預算在過去 2 年內減少了近一半."
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__report_paperformat__format__folio
@@ -16666,6 +16702,8 @@ msgid ""
 "Gemini Furniture brings honesty and seriousness to wood industry while "
 "helping customers deal with trees, flowers and fungi."
 msgstr ""
+"Gemini Furniture brings honesty and seriousness to wood industry while "
+"helping customers deal with trees, flowers and fungi."
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
@@ -16900,6 +16938,10 @@ msgid ""
 "                IT budget by almost half within the last 2 years.\n"
 "                Famous Senior Consultant."
 msgstr ""
+"Gordon Owens <b>在 IT 領域工作了 10 年</b>。 他是眾所周知的\n"
+"                 尤其是出售捕鼠器。 用那個把戲他砍了\n"
+"                 IT 預算在過去 2 年內減少了近一半。\n"
+"                 著名高級顧問."
 
 #. module: base
 #: model:ir.model.fields.selection,name:base.selection__ir_actions_act_window_view__view_mode__graph
@@ -17827,28 +17869,28 @@ msgstr "圖像"
 #: model:ir.model.fields,field_description:base.field_res_partner__image_1024
 #: model:ir.model.fields,field_description:base.field_res_users__image_1024
 msgid "Image 1024"
-msgstr "畫素 1024"
+msgstr "圖像 1024"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_image_mixin__image_128
 #: model:ir.model.fields,field_description:base.field_res_partner__image_128
 #: model:ir.model.fields,field_description:base.field_res_users__image_128
 msgid "Image 128"
-msgstr "畫素 128"
+msgstr "圖像 128"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_image_mixin__image_256
 #: model:ir.model.fields,field_description:base.field_res_partner__image_256
 #: model:ir.model.fields,field_description:base.field_res_users__image_256
 msgid "Image 256"
-msgstr "畫素 256"
+msgstr "圖像 256"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_image_mixin__image_512
 #: model:ir.model.fields,field_description:base.field_res_partner__image_512
 #: model:ir.model.fields,field_description:base.field_res_users__image_512
 msgid "Image 512"
-msgstr "畫素 512"
+msgstr "圖像 512"
 
 #. module: base
 #: model:ir.model,name:base.model_image_mixin
@@ -18355,6 +18397,12 @@ msgstr "指定的\"訂單\"無效(%s). 有效的\"順序\"規範是以逗號分�
 #, python-format
 msgid "Invalid 'group by' parameter"
 msgstr "無效的「分組」參數"
+
+#. module: base
+#: code:addons/template_inheritance.py:0
+#, python-format
+msgid "Invalid Expression while parsing xpath %r"
+msgstr ""
 
 #. module: base
 #: code:addons/base/models/ir_default.py:0
@@ -19241,7 +19289,7 @@ msgstr "線索評分"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_crm_helpdesk
 msgid "Lead to Tickets"
-msgstr ""
+msgstr "潛在客戶至支援請求"
 
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.module_view_kanban
@@ -19529,7 +19577,7 @@ msgstr "長"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_pos_loyalty
 msgid "Loyalty Program"
-msgstr "忠誠計劃"
+msgstr "會員計劃"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_pos_loyalty
@@ -20336,6 +20384,74 @@ msgid ""
 "perspectiva contable íntegramente. Por lo tanto, este PCGE no debe ser considerado en ningún aspecto\n"
 "como una guía con propósitos distintos del contable.\n"
 msgstr ""
+"Minimal set of accounts to start to work in Perú.\n"
+"=================================================\n"
+"\n"
+"The usage of this CoA must refer to the official documentation on MEF.\n"
+"\n"
+"https://www.mef.gob.pe/contenidos/conta_publ/documentac/VERSION_MODIFICADA_PCG_EMPRESARIAL.pdf\n"
+"https://www.mef.gob.pe/contenidos/conta_publ/documentac/PCGE_2019.pdf\n"
+"\n"
+"All the legal references can be found here.\n"
+"\n"
+"http://www.sunat.gob.pe/legislacion/general/index.html\n"
+"\n"
+"Considerations.\n"
+"===============\n"
+"\n"
+"Chart of account:\n"
+"-----------------\n"
+"\n"
+"The tree of the CoA is done using account groups, all the accounts with move\n"
+"are available as groups but only the more common ones are available as actual\n"
+"accounts, if you want to create a new one use the group of accounts as\n"
+"reference.\n"
+"\n"
+"# TODO: Image showing what I am talking about.\n"
+"\n"
+"Taxes:\n"
+"------\n"
+"\n"
+"'IGV': {'name': 'VAT', 'code': 'S'},\n"
+"'IVAP': {'name': 'VAT', 'code': ''},\n"
+"'ISC': {'name': 'EXC', 'code': 'S'},\n"
+"'ICBPER': {'name': 'OTH', 'code': ''},\n"
+"'EXP': {'name': 'FRE', 'code': 'G'},\n"
+"'GRA': {'name': 'FRE', 'code': 'Z'},\n"
+"'EXO': {'name': 'VAT', 'code': 'E'},\n"
+"'INA': {'name': 'FRE', 'code': 'O'},\n"
+"'OTROS': {'name': 'OTH', 'code': 'S'},\n"
+"\n"
+"We added on this module the 3 concepts in taxes (necessary for the EDI\n"
+"signature)\n"
+"\n"
+"# TODO: Describe new fields.\n"
+"\n"
+"Products:\n"
+"---------\n"
+"\n"
+"Code for products to be used in the EDI are availables here, in order to decide\n"
+"which tax use due to which code following this reference and python code:\n"
+"\n"
+"https://docs.google.com/spreadsheets/d/1f1fxV8uGhA-Qz9-R1L1-dJirZ8xi3Wfg/edit#gid=662652969\n"
+"\n"
+"**Nota:**\n"
+"---------\n"
+"\n"
+"**RELACIÓN ENTRE EL PCGE Y LA LEGISLACIÓN TRIBUTARIA:**\n"
+"\n"
+"Este PCGE ha sido preparado como una herramienta de carácter contable, para acumular información que\n"
+"requiere ser expuesta en el cuerpo de los estados financieros o en las notas a dichos estados. Esa acumulación se\n"
+"efectúa en los libros o registros contables, cuya denominación y naturaleza depende de las actividades que se\n"
+"efectúen, y que permiten acciones de verificación, control y seguimiento. Las NIIF completas y la NIIF PYMES no\n"
+"contienen prescripciones sobre teneduría de libros, y consecuentemente, sobre los libros y otros registros\n"
+"de naturaleza contable. Por otro lado, si bien es cierto la contabilidad es también un insumo, dentro de otros, para\n"
+"labores de cumplimiento tributario, este PCGE no ha sido elaborado para satisfacer prescripciones tributarias ni su\n"
+"verificación. No obstante ello, donde no hubo oposición entre la contabilidad financiera prescrita por las NIIF y\n"
+"la legislación tributaria, este PCGE ha incluido subcuentas, divisionarias y sub divisionarias, para\n"
+"distinguir componentes con validez tributaria, dentro del conjunto de componentes que corresponden a una\n"
+"perspectiva contable íntegramente. Por lo tanto, este PCGE no debe ser considerado en ningún aspecto\n"
+"como una guía con propósitos distintos del contable.\n"
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_B
@@ -20729,7 +20845,7 @@ msgstr "Mr."
 #. module: base
 #: model:res.partner.title,shortcut:base.res_partner_title_madam
 msgid "Mrs."
-msgstr "Mrs."
+msgstr "太太"
 
 #. module: base
 #: model:res.groups,name:base.group_multi_company
@@ -22193,103 +22309,6 @@ msgid ""
 "emails directly into the application.\n"
 "\n"
 msgstr ""
-"Odoo Mass Mailing\n"
-"-----------------\n"
-"\n"
-"Easily send mass mailing to your leads, opportunities or customers\n"
-"with Odoo <a href=\"https://www.odoo.com/page/mailing#\">Email Marketing</a>. Track\n"
-"marketing campaigns performance to improve conversion rates. Design\n"
-"professional emails and reuse templates in a few clicks.\n"
-"\n"
-"Send Professional Emails\n"
-"------------------------\n"
-"\n"
-"Import database of prospects or filter on existing leads, opportunities and\n"
-"customers in just a few clicks.\n"
-"\n"
-"Define email templates to reuse content or specific design for your newsletter.\n"
-"Setup several email servers with their own IP/domain to optimise opening rates.\n"
-"\n"
-"Organize Marketing Campaigns\n"
-"----------------------------\n"
-"\n"
-"Design, Send, Track by Campaigns with our <a href=\"https://www.odoo.com/page/mailing\">Lead Automation</a> app.\n"
-"\n"
-"Get real time statistics on campaigns performance to improve your conversion\n"
-"rate. Track mails sent, received, opened and answered.\n"
-"\n"
-"Easily manage your marketing campaigns, discussion groups, leads and\n"
-"opportunities in one simple and powerful platform.\n"
-"\n"
-"Integrated with Odoo Apps\n"
-"-------------------------\n"
-"\n"
-"Get access to mass mailing features from every Odoo app to improve the way your\n"
-"users communicate.\n"
-"\n"
-"Send template of emails from Odoo <a href=\"https://www.odoo.com/page/mailing\">CRM opportunities</a>, select leads based\n"
-"on marketing segments, send <a href=\"https://www.odoo.com/page/recruitment\">job offers</a> and automate\n"
-"answers to applicants, reuse email template in the lead automation marketing\n"
-"campaigns.\n"
-"\n"
-"Answers to your emails appears automatically in the history of every document\n"
-"with the social network module.\n"
-"\n"
-"Clean Your Lead Database\n"
-"------------------------\n"
-"\n"
-"Get a clean lead database that improves over the time using the performance of\n"
-"your mails. Odoo handle bounce mails efficiently, flag erroneous leads\n"
-"accordingly and gives you statistics on the quality of your leads.\n"
-"\n"
-"One click emails send\n"
-"---------------------\n"
-"\n"
-"The marketing department will love working on campaigns. But you can also give\n"
-"a one click mass mailing facility to all others users on their own prospects or\n"
-"documents.\n"
-"\n"
-"Select a few documents (e.g. leads, support tickets, suppliers, applicants,\n"
-"...) and send emails to their contacts in one click, reusing existing emails\n"
-"templates.\n"
-"\n"
-"Follow-up On Answers\n"
-"--------------------\n"
-"\n"
-"The chatter feature enables you to communicate faster and more efficiently with\n"
-"your customer. Get documents created automatically (leads, opportunities,\n"
-"tasks, ...) based on answers to your mass mailing campaigns Follow the\n"
-"discussion directly on the business documents within Odoo or via email.\n"
-"\n"
-"Get all the negotiations and discussions attached to the right document and\n"
-"relevent managers notified on specific events.\n"
-"\n"
-"Campaigns Dashboard\n"
-"-------------------\n"
-"\n"
-"Get the insights you need to make smarter marketing campaign. Track statistics\n"
-"per campaign: bounce rates, sent mails, best content, etc. The clear dashboards\n"
-"gives you a direct overview of your campaign performance.\n"
-"\n"
-"Fully Integrated With Others Apps\n"
-"---------------------------------\n"
-"\n"
-"Define automated actions (e.g. ask a salesperson to call, send an email, ...)\n"
-"based on triggers (no activity since 20 days, answered a promotional email,\n"
-"etc.)\n"
-"\n"
-"Optimize campaigns from lead to close, on every channel. Make smarter decisions\n"
-"about where to invest and show the impact of your marketing activities on your\n"
-"company's bottom line.\n"
-"\n"
-"Integrate a contact form in your website easily. Forms submissions create leads\n"
-"automatically in Odoo CRM. Leads can be used in marketing campaigns.\n"
-"\n"
-"Manage your <a href=\"https://www.odoo.com/page/crm\">sales funnel</a> with no\n"
-"effort. Attract leads, follow-up on phone calls and meetings. Analyse the\n"
-"quality of your leads to make informed decisions and save time by integrating\n"
-"emails directly into the application.\n"
-"\n"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_l10n_mx_reports
@@ -23307,7 +23326,7 @@ msgstr "選項"
 #: model:ir.model.fields,help:base.field_ir_actions_act_window__domain
 msgid ""
 "Optional domain filtering of the destination data, as a Python expression"
-msgstr "目標資料的可選篩選條件，使用 Python 表達式"
+msgstr "目標資料的可選用篩選範圍，使用 Python 表達式"
 
 #. module: base
 #: model:ir.model.fields,help:base.field_ir_actions_act_url__help
@@ -24446,7 +24465,7 @@ msgstr "顯示活動推文的漂亮姿勢"
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_layout__image
 msgid "Preview image src"
-msgstr "預覽圖片src"
+msgstr "預覽圖片來源"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_report_layout__pdf
@@ -25134,7 +25153,7 @@ msgstr "只讀"
 msgid ""
 "Ready Mat brings honesty and seriousness to wood industry while helping "
 "customers deal with trees, flowers and fungi."
-msgstr ""
+msgstr "Ready Mat 為木材行業帶來誠實和認真，同時幫助客戶處理樹木、花卉和真菌."
 
 #. module: base
 #: model:res.partner.industry,name:base.res_partner_industry_L
@@ -25250,7 +25269,7 @@ msgstr "服務端動作存在循環調用"
 #: model:ir.model.fields.selection,name:base.selection__ir_server_object_lines__evaluation_type__reference
 #: model_terms:ir.ui.view,arch_db:base.view_partner_form
 msgid "Reference"
-msgstr "編號"
+msgstr "客戶成功案例"
 
 #. module: base
 #: code:addons/base/models/ir_qweb_fields.py:0
@@ -25629,7 +25648,7 @@ msgstr "規則"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.view_rule_form
 msgid "Rule Definition (Domain Filter)"
-msgstr "規則定義( Domain  篩選)"
+msgstr "規則定義（範圍篩選）"
 
 #. module: base
 #: model:ir.model.constraint,message:base.constraint_ir_rule_no_access_rights
@@ -26599,7 +26618,7 @@ msgstr "塞拉利昂"
 #: model:ir.module.category,name:base.module_category_sales_sign
 #: model:ir.module.module,shortdesc:base.module_sign
 msgid "Sign"
-msgstr "簽字"
+msgstr "簽名"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_hr_contract_salary
@@ -26609,7 +26628,7 @@ msgstr "簽訂勞動契約"
 #. module: base
 #: model:ir.module.module,summary:base.module_documents_sign
 msgid "Signature templates from Documents"
-msgstr "文件簽名模板"
+msgstr "文件中的簽名範本"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_signup
@@ -27198,7 +27217,7 @@ msgstr "補充參數"
 #. module: base
 #: model:ir.module.module,summary:base.module_website_event_track_live
 msgid "Support live tracks: streaming, participation, youtube"
-msgstr ""
+msgstr "支援直播曲目: 流媒體、參與、youtube"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_quality_control_picking_batch
@@ -27208,7 +27227,7 @@ msgstr "支持批量調撥的品質管控"
 #. module: base
 #: model:res.country,name:base.sr
 msgid "Suriname"
-msgstr "蘇裡南"
+msgstr "蘇里南"
 
 #. module: base
 #: model:ir.module.category,name:base.module_category_marketing_surveys
@@ -27631,7 +27650,7 @@ msgstr ""
 msgid ""
 "The Jackson Group brings honesty and seriousness to wood industry while "
 "helping customers deal with trees, flowers and fungi."
-msgstr ""
+msgstr "傑克遜集團為木業帶來誠實和認真，同時幫助客戶處理樹木、花卉和真菌."
 
 #. module: base
 #: model:ir.model.fields,help:base.field_res_lang__url_code
@@ -28921,12 +28940,12 @@ msgstr "推特片段"
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_website_twitter_wall
 msgid "Twitter Wall"
-msgstr "推特牆"
+msgstr "Twitter 訊息牆"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_twitter
 msgid "Twitter scroller snippet in website"
-msgstr "網站上的推特(Twitter)滾動條代碼段"
+msgstr "網站內 Twitter 捲動小資料"
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_auth_totp

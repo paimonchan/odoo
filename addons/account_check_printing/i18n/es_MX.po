@@ -5,7 +5,7 @@
 # Translators:
 # Cécile Collart <cco@odoo.com>, 2021
 # Daniela Cervantes <dace@odoo.com>, 2021
-# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2021
+# Patricia Gutiérrez Capetillo <pagc@odoo.com>, 2023
 # Fernanda Alvarez, 2023
 # 
 msgid ""
@@ -185,7 +185,7 @@ msgstr "Ir al panel de configuración"
 #: model:ir.model.fields,field_description:account_check_printing.field_res_config_settings__id
 #: model:ir.model.fields,field_description:account_check_printing.field_res_partner__id
 msgid "ID"
-msgstr "Identificación"
+msgstr "ID"
 
 #. module: account_check_printing
 #: code:addons/account_check_printing/models/account_payment.py:0
@@ -445,7 +445,7 @@ msgstr "Quitar la marca de enviado"
 #. module: account_check_printing
 #: model_terms:ir.ui.view,arch_db:account_check_printing.view_account_payment_form_inherited
 msgid "Void Check"
-msgstr "Cheque vacío"
+msgstr "Anular cheque"
 
 #. module: account_check_printing
 #: code:addons/account_check_printing/models/account_payment.py:0

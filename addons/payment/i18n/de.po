@@ -2093,6 +2093,14 @@ msgstr ""
 "Sie können hier klicken, um zur Bestätigungsseite weitergeleitet zu werden."
 
 #. module: payment
+#: code:addons/payment/models/payment_acquirer.py:0
+#, python-format
+msgid ""
+"You cannot delete the payment acquirer %s; disable it or uninstall it "
+"instead."
+msgstr ""
+
+#. module: payment
 #: code:addons/payment/wizards/payment_acquirer_onboarding_wizard.py:0
 #, python-format
 msgid "You have to set a journal for your payment acquirer %s."

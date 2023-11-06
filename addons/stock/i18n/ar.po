@@ -3107,16 +3107,16 @@ msgid "Invalid domain left operand %s"
 msgstr "Invalid domain left operand %s"
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
 msgid "Invalid domain operator %s"
 msgstr "مشغّل النطاق غير صالح %s "
 
 #. module: stock
-#: code:addons/stock/models/product.py:0
+#: code:addons/stock/models/product.py:0 code:addons/stock/models/product.py:0
 #, python-format
-msgid "Invalid domain right operand %s"
-msgstr "Invalid domain right operand %s"
+msgid "Invalid domain right operand '%s'. It must be of type Integer/Float"
+msgstr ""
 
 #. module: stock
 #: code:addons/stock/models/product.py:0
@@ -8060,6 +8060,8 @@ msgstr "لا يمكنك تقسيم حركه مسودة. تحتاج للتأكي�
 #, python-format
 msgid "You cannot split a stock move that has been set to 'Done' or 'Cancel'."
 msgstr ""
+"لا يمنكك تقسيم حركة مخزون تم تعيين حالتها إلى \"تم الانتهاء\" أو \"تم "
+"الإلغاء\".  "
 
 #. module: stock
 #: code:addons/stock/models/stock_quant.py:0

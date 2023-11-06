@@ -40,9 +40,9 @@
 # Mateus Lopes <mateus1@gmail.com>, 2020
 # grazziano <grazziano.do+transifex@gmail.com>, 2020
 # PopSolutions Cooperativa Digital <popsolutions.co@gmail.com>, 2020
-# Éder Brito <britoederr@gmail.com>, 2021
 # douglas custodio <douglascstd@yahoo.com>, 2022
 # Kevilyn Rosa, 2023
+# Éder Brito <britoederr@gmail.com>, 2023
 # Layna Nascimento, 2023
 # 
 msgid ""
@@ -551,7 +551,7 @@ msgid ""
 msgstr ""
 "\n"
 "\n"
-"Este módulo adiciona vários recursos ao Ponto de venda que são específicos para o gerenciamento de restaurantes:\n"
+"Este módulo adiciona vários recursos ao ponto de venda que são específicos para o gerenciamento de restaurantes:\n"
 "- Impressão de faturas: permite imprimir um recibo antes do pagamento do pedido\n"
 "- Divisão de contas: permite que você divida um pedido em diferentes pedidos\n"
 "- Impressão de pedidos de cozinha: permite que você imprima atualizações de pedidos em impressoras de cozinha ou bar\n"
@@ -1144,9 +1144,9 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Especifique aluguéis de produtos (produtos, cotações, faturas, ...)\n"
-"        Gerencie o status de produtos, aluguéis, atrasos\n"
-"        Gerencie usuários e gerencie notificações\n"
+"        Especifique locações de produtos (produtos, cotações, faturas...)\n"
+"        Gerencie o status de produtos, locações, atrasos\n"
+"        Gerencie notificações de usuários e administradores\n"
 "    "
 
 #. module: base
@@ -1160,10 +1160,10 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        O propósito desse módulo é implementar campos \"esparsos\" e.g,. campos que\n"
-"        são quase sempre null. Essa implementação faz contorno à limitação de números \n"
-"        de colunas em uma tabela do PostgreSQL. Esses valores são todos campos esparsos\n"
-"        armazenados em um campo \"serializado\" na forma de um mapeamento JSON.\n"
+"        O propósito desse módulo é implementar campos \"esparsos\", ou seja, \n"
+"campos que são quase sempre nulos. Essa implementação contorna \n"
+"a limitação de números de colunas em uma tabela do PostgreSQL. Esses valores \n"
+"são todos campos esparsos armazenados em um campo \"seriado\" na forma de um mapeamento JSON.\n"
 "            "
 
 #. module: base
@@ -1310,34 +1310,34 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"        Este módulo permite a geração de arquivos XML compatíveis com SEPA Direct Debit (SDD) (consistente\n"
+"        Este módulo permite a geração de arquivos XML compatíveis com Débito Direto SEPA (SDD) (consistente\n"
 "com a especificação pain.008.001.02) para enviar ao seu banco a fim de\n"
 "coletar um conjunto de pagamentos.\n"
 "\n"
 "Para ser elegível para este método de pagamento, o cliente deve primeiro ter\n"
-"devolveu mandato à empresa, dando consentimento para a utilização do débito direto.\n"
+"retornado o mandato à empresa, dando consentimento para a utilização do débito direto.\n"
 "Este consentimento deve ter sido codificado como um 'mandato do cliente' no Odoo.\n"
 "\n"
 "Você também precisa atender aos seguintes requisitos para poder\n"
 "gerar um arquivo SDD:\n"
 "- Sua conta corporativa deve ser configurada com um número IBAN válido\n"
-"- Sua empresa deve ter recebido um identificador de credor (isso pode ser feito no menu 'configurações' do módulo de contabilidade)\n"
-"- Sua empresa deve ter definido um diário para receber pagamentos SDD (novamente, nas 'configurações' do módulo de contabilidade)\n"
+"- Sua empresa deve ter recebido um identificador de credor (isso pode ser feito no menu 'configurações' do módulo financeiro)\n"
+"- Sua empresa deve ter definido um diário para receber pagamentos SDD (novamente, nas 'configurações' do módulo financeiro)\n"
 "- Cada cliente para o qual você gera um pagamento deve ter um número de conta IBAN válido.\n"
 "\n"
-"O Odoo irá informá-lo se algum desses requisitos não for satisfeito.\n"
+"O Odoo irá informá-lo se algum desses requisitos não for preenchido.\n"
 "\n"
 "Qualquer fatura que seja validada para um cliente com mandato será\n"
-"definido automaticamente no estado 'pago' e um pagamento será gerado. A\n"
-"opção no painel irá permitir que você visualize todos os pagamentos gerados\n"
-"via SDD e para gerar um arquivo de coleta XML para eles, agrupando-os como\n"
-"você vê o ajuste.\n"
+"definido automaticamente como 'pago' e um pagamento será gerado. A\n"
+"opção no painel permitirá que você visualize todos os pagamentos gerados\n"
+"via SDD e gere um arquivo de coleta XML para eles, agrupando-os como\n"
+"você ajustar.\n"
 "\n"
 "Um método de pagamento dedicado 'Débito Direto SEPA' também está disponível para\n"
-"abrir faturas, ao selecionar uma conta bancária no assistente 'registrar pagamento'.\n"
+"faturas em aberto, ao selecionar uma conta bancária no assistente de 'registrar pagamento'.\n"
 "Use-o para gerar um pagamento SDD para as faturas se você adicionou um mandato\n"
-"para seu proprietário após sua validação. Você verá uma mensagem de erro se você\n"
-"tente usar este método em uma fatura para cujo pagamento nenhum mandato pode ser usado."
+"para seu proprietário após validação. Você verá uma mensagem de erro se você\n"
+"tentar usar este método em uma fatura para cujo pagamento nenhum mandato pode ser usado."
 
 #. module: base
 #: model:ir.module.module,description:base.module_google_recaptcha
@@ -10580,12 +10580,12 @@ msgstr "Tipo de Ação"
 #: model:ir.model,name:base.model_ir_actions_act_url
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_url__url
 msgid "Action URL"
-msgstr "URL de ação"
+msgstr "URL da ação"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_ir_actions_act_window__usage
 msgid "Action Usage"
-msgstr "Uso de ação"
+msgstr "Uso da ação"
 
 #. module: base
 #: model:ir.model,name:base.model_ir_actions_act_window
@@ -13001,8 +13001,8 @@ msgid ""
 "Child server actions that will be executed. Note that the last return "
 "returned action value will be used as global return value."
 msgstr ""
-"Ações de servidor filho que serão executadas. Note-se que o último retorno "
-"retornou o valor da ação que será usado como valor de retorno global."
+"Ações secundárias de servidor que serão executadas. Observe que o último "
+"valor de ação retornado será usado como valor de retorno global."
 
 #. module: base
 #: model:res.country,name:base.cl
@@ -13421,7 +13421,7 @@ msgstr "Calcular"
 #: code:addons/base/models/ir_model.py:0
 #, python-format
 msgid "Compute method cannot depend on field 'id'"
-msgstr ""
+msgstr "O método de cálculo não pode depender do campo 'id'"
 
 #. module: base
 #: model:ir.module.module,summary:base.module_website_crm_score
@@ -13983,10 +13983,10 @@ msgid ""
 "not connect to the system. You can assign them groups in order to give them "
 "specific access to the applications they need to use in the system."
 msgstr ""
-"Crie e gerencie os usuários que irão acessar o sistema. Usuários podem ser "
-"desativados se não devem se conectar no sistema por um período de tempo. "
-"Você pode atribuir grupos para permitir acesso específico a aplicações que "
-"eles precisam usar no sistema."
+"Crie e gerencie os usuários que acessarão o sistema. Usuários podem ser "
+"desativados caso haja um período de tempo em que eles não devam se conectar "
+"ao sistema. Você pode atribuir grupos para conceder acesso específico aos "
+"aplicativos que eles precisam usar no sistema."
 
 #. module: base
 #: model:ir.module.module,summary:base.module_approvals
@@ -15843,6 +15843,9 @@ msgid ""
 "\n"
 "%s"
 msgstr ""
+"Erro ao analisar a visualização:\n"
+"\n"
+"%s"
 
 #. module: base
 #: code:addons/base/models/ir_ui_view.py:0
@@ -18151,7 +18154,7 @@ msgstr "Código ISO"
 #. module: base
 #: model:ir.model.fields,help:base.field_base_language_import__code
 msgid "ISO Language and Country code, e.g. en_US"
-msgstr "Código ISO do país e língua (ex. pt_BR)"
+msgstr "Código ISO do idioma e código do país (ex., pt_BR)"
 
 #. module: base
 #: model:ir.model.fields,field_description:base.field_res_lang__iso_code
@@ -18895,7 +18898,7 @@ msgstr "Intrastat Reports"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.report_irmodulereference
 msgid "Introspection report on objects"
-msgstr "Relatório de instrospecção nos objetos"
+msgstr "Relatório de introspecção de objetos"
 
 #. module: base
 #: code:addons/models.py:0
@@ -18916,10 +18919,16 @@ msgid "Invalid 'group by' parameter"
 msgstr "Invalid 'group by' parameter"
 
 #. module: base
+#: code:addons/template_inheritance.py:0
+#, python-format
+msgid "Invalid Expression while parsing xpath %r"
+msgstr ""
+
+#. module: base
 #: code:addons/base/models/ir_default.py:0
 #, python-format
 msgid "Invalid JSON format in Default Value field."
-msgstr ""
+msgstr "Formato JSON inválido no campo Valor padrão."
 
 #. module: base
 #: code:addons/models.py:0
@@ -27435,7 +27444,7 @@ msgstr "Ação de Servidor"
 #. module: base
 #: model:ir.model,name:base.model_ir_server_object_lines
 msgid "Server Action value mapping"
-msgstr "Servidor de mapeamento de valores de ação"
+msgstr "Ação de servidor: mapeamento de valores"
 
 #. module: base
 #: model:ir.actions.act_window,name:base.action_server_action
@@ -30715,7 +30724,7 @@ msgstr "Usuários"
 #. module: base
 #: model:ir.ui.menu,name:base.menu_users
 msgid "Users & Companies"
-msgstr "Usuários & Empresas"
+msgstr "Usuários e Empresas"
 
 #. module: base
 #: model:ir.model,name:base.model_res_users_log
@@ -31699,7 +31708,7 @@ msgstr "You cannot deactivate the user you're currently logged in as."
 #: code:addons/base/models/ir_config_parameter.py:0
 #, python-format
 msgid "You cannot delete the %s record."
-msgstr ""
+msgstr "Você não pode deletar o registro %s."
 
 #. module: base
 #: code:addons/base/models/res_lang.py:0
@@ -31728,7 +31737,7 @@ msgstr "Não é possível mesclar um contato com um de seus pais."
 #: code:addons/base/models/ir_config_parameter.py:0
 #, python-format
 msgid "You cannot rename config parameters with keys %s"
-msgstr ""
+msgstr "Você não pode renomear os parâmetros de configuração com as chaves %s"
 
 #. module: base
 #: code:addons/models.py:0

@@ -2521,7 +2521,7 @@ msgstr ""
 "\n"
 "* الدفع السريع عن طريق تمرير بطاقة الائتمان عندما تكون في شاشة الدفع\n"
 "* الجمع بين الدفع عن طريق البطاقة الائتمانية والدفع النقدي\n"
-"* استرجاه النقود\n"
+"* استرجاع النقود\n"
 "* البطاقات المدعومة: Visa, MasterCard, American Express, Discover\n"
 "    "
 
@@ -3196,12 +3196,12 @@ msgid ""
 "    "
 msgstr ""
 "\n"
-"موديول وسيط لإدراج الإجازات في سجلات النشاط\n"
+"تطبيق وسيط لإدراج الإجازات في الجداول الزمنية\n"
 "================================================\n"
 "\n"
-"يسمح هذا الموديول بتسجيل سجلات النشاط تلقائيًا عندما يكون الموظفون\n"
-"في إجازات. يمكن إعداد المشروع والمهمة على مستوى المؤسسة.\n"
-"    "
+"يتيح لك هذا التطبيق تسجيل الجداول الزمنية تلقائيًا عندما يكون الموظفون\n"
+"في إجازات. يمكن تهيئة المشروع والمهمة على مستوى الشركة.\n"
+"   "
 
 #. module: base
 #: model:ir.module.module,description:base.module_base_automation_hr_contract
@@ -5835,6 +5835,10 @@ msgid ""
 "=============================\n"
 "\n"
 msgstr ""
+"\n"
+"طريقة عرض مخطط غانت على الويب في أودو.\n"
+"=============================\n"
+"\n"
 
 #. module: base
 #: model:ir.module.module,description:base.module_web
@@ -12170,13 +12174,13 @@ msgstr "البرازيلي - المحاسبة"
 #: model:ir.module.module,description:base.module_iap_crm
 #: model:ir.module.module,summary:base.module_iap_crm
 msgid "Bridge between IAP and CRM"
-msgstr "وسيط بين الوكيل المدرك للهوية وإدارة علاقات العملاء "
+msgstr "وسيط بين عمليات الشراء داخل التطبيق (IAP) وإدارة علاقات العملاء "
 
 #. module: base
 #: model:ir.module.module,description:base.module_iap_mail
 #: model:ir.module.module,summary:base.module_iap_mail
 msgid "Bridge between IAP and mail"
-msgstr "وسيط بين الوكيل المدرك للهوية والبريد "
+msgstr "وسيط بين عمليات الشراء داخل التطبيق (IAP) والبريد "
 
 #. module: base
 #: model:ir.module.module,summary:base.module_sale_account_accountant
@@ -18580,6 +18584,12 @@ msgstr ""
 #, python-format
 msgid "Invalid 'group by' parameter"
 msgstr "معامل 'تجميع حسب' غير صالح"
+
+#. module: base
+#: code:addons/template_inheritance.py:0
+#, python-format
+msgid "Invalid Expression while parsing xpath %r"
+msgstr "Invalid Expression while parsing xpath %r"
 
 #. module: base
 #: code:addons/base/models/ir_default.py:0
@@ -27167,7 +27177,7 @@ msgstr "Test Belgian Payroll"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_mail_server_form
 msgid "Test Connection"
-msgstr "اختبار اتصال"
+msgstr "اختبار الاتصال "
 
 #. module: base
 #: model:ir.module.module,shortdesc:base.module_test_data_cleaning
@@ -28338,7 +28348,7 @@ msgstr "To return an action, assign: <code>action = {...}</code>"
 #. module: base
 #: model_terms:ir.ui.view,arch_db:base.ir_actions_todo_tree
 msgid "Todo"
-msgstr "المطلوب تنفيذه"
+msgstr "قائمة المهام "
 
 #. module: base
 #: model:res.country,name:base.tg
